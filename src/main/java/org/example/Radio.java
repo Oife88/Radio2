@@ -9,7 +9,9 @@ package org.example;
         private int maxVolume = 100;
 
         public Radio(int minStation) {
+
         }
+
 
         public int getMaxVolume() {
             return maxVolume;
@@ -18,6 +20,7 @@ package org.example;
         public int getMaxStation() {
             return maxStation;
         }
+
 
 
 

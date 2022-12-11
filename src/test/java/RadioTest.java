@@ -6,11 +6,25 @@ public class RadioTest {
 
     @Test
     public void moreThanMaxNumbers() {
-        Radio radio = new Radio(20);
+        Radio radio = new Radio(100, 9);
+
+
 
         Assertions.assertEquals(9, radio.getMaxStation());
+        Assertions.assertEquals(100, radio.getMaxVolume());
+    }
+
+    @Test
+    public void moreThanMaxxNumbers() {
+        Radio radio = new Radio(10);
+        radio.setCurrentStationNumber(10);
+
+
+
         Assertions.assertEquals(0, radio.getCurrentStationNumber());
     }
+
+
 
     @Test
     public void withTheBordersNumbers() {
